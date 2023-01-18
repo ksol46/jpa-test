@@ -11,7 +11,7 @@ public class MemberService {
 	public void save(Member member) {
 		//엔티티 매니저 팩토리 - 애플리케이션 실행 시 한 개만 생성됨.
 		EntityManagerFactory emf = UniqueEntityManagerFactory.emf;
-		//엔티티 매니저 - 엔티티 매니저 팩토리를 생선한다.
+		//엔티티 매니저 - 엔티티 매니저 팩토리를 생성한다.
 		EntityManager em = emf.createEntityManager();
 		//트랜잭션(쪼갤 수 없는 업무의 단위)
 		EntityTransaction tx = em.getTransaction();
